@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI' !important;
+    background-color: #1e003d;
+}
+
+.section-1 h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.section-1 p{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.section-1 .btn-div{
+    display: flex;
+    gap: 30px;
+}
+
+.section-1 .btn-div button{
+    padding: 16px 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ddbbff;
+    border: 0;
+    outline: 0;
+    opacity: 0.85;
+    transition: 0.5s;
+}
+
+.section-1 .btn-div button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid #ddbbff;
+    color: #ddbbff;
+}
+
+.section-1 .btn-div button:nth-child(1):hover{
+    opacity: 1;
+}
+
+.section-1 .btn-div button:nth-child(2):hover{
+    background-color: #ddbbff;
+    color: #000;
+    opacity: 1;
+}
+
+/*imp! SECTION 2 CSS */
+
+.section-2{
+    background-color: #ececec;
+    padding: 50px 30px;
+}
+
+@media (max-width: 991px){
+    .section-1 .btn-div{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-1 .btn-div{
+        flex-direction: column;
+    }
+    .section-1 .btn-div button{
+        padding: 10px 15px;
+    }
+}
